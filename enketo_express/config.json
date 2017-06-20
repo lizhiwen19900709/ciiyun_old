@@ -1,0 +1,7 @@
+{
+    "app name": "Enketo Express for CiiYUN",
+    "linked form and data server": {
+        "name": "CiiYUN",
+        "server url": ""
+    }
+}
