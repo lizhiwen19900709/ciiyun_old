@@ -170,6 +170,7 @@ enketo_express:
     - redis_cache
   restart: on-failure
   volumes:
+    - ./.vols/static/enketo_express:/srv/static
     - ./scripts/runtime_variables_enketo_express.source.bash:/etc/profile.d/runtime_variables_enketo_express.source.bash.sh:ro
     - ./enketo_express/config.json:/srv/tmp/enketo_express_config.json:ro
     - ./scripts/enketo_express_copy_config.bash:/etc/my_init.d/01_enketo_express_copy_config.bash:ro
