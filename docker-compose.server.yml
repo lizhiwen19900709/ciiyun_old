@@ -159,7 +159,7 @@ nginx:
     - enketo_express
   restart: on-failure
 
-# Adapted from https://github.com/kobotoolbox/enketo-express/blob/docker/docker-compose.yml.
+
 enketo_express:
   image: veibt.com:5000/enketo_express:latest
   # Dev: Build the image locally.
@@ -188,7 +188,7 @@ enketo_express:
   #   - 'www.ciiyun.com:172.17.0.1'
   #   - 'www.ciiyun.com:172.17.0.1'
 
-# Adapted from https://github.com/kobotoolbox/enketo-express/blob/docker/docker-compose.yml.
+
 redis_main:
   image: veibt.com:5000/redis:latest
   # Map our "main" Redis config into the container.
@@ -197,7 +197,7 @@ redis_main:
     - ./.vols/redis_main_data/:/data/
   restart: on-failure
 
-# Adapted from https://github.com/kobotoolbox/enketo-express/blob/docker/docker-compose.yml.
+
 redis_cache:
   image: veibt.com:5000/redis:latest
   # Map our "cache" Redis config into the container.
